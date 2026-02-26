@@ -1,0 +1,15 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Logs / runtime
+*.log
+
+# Secrets (no subas credenciales)
+.env
+secrets/
+mosquitto/config/passwordfile
+
+# Docker
+**/data/
