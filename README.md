@@ -17,18 +17,23 @@ Publisher (Python) → MQTT → Ingestor (Python) → InfluxDB
 1) Levantar servicios:
 ```bash
 sudo docker compose up -d
-
+```
 2) Crear entorno Python
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install paho-mqtt requests
+```
 
 3) Ejecutar ingestor
+```bash
 python mqtt_to_influx.py
+```
 
 4) Ejecutar publisher
+```bash
 python publish_cpu_temp.py
-
+```
 ## MQTT Topics
 Ver docs/topics.md
 
